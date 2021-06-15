@@ -6,10 +6,10 @@ gem 'yard', '~> 0.9.20', require: false
 
 # Test tools
 gem 'addressable', '~> 2.4.0', require: false
-gem 'aruba', '~> 0.7.4', require: false
+gem 'aruba', '~> 1.1.0', require: false
 gem 'byebug'
 gem 'capybara', '~> 2.5.0', require: false
-gem 'cucumber', '~> 2.0', require: false
+gem 'cucumber', '~> 6.0', require: false
 gem 'rspec', '~> 3.0', require: false
 
 # Pry tools
@@ -37,7 +37,6 @@ gem 'therubyrhino', '>= 2.0', platforms: :jruby
 # Code Quality
 gem 'codeclimate-test-reporter', '~> 0.3', require: false, group: :test
 gem 'coveralls', '~> 0.8', require: false
-gem 'rubocop', '~> 0.24', require: false
 gem 'simplecov', '~> 0.10', require: false
 
 # Middleman itself

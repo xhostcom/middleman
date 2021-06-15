@@ -8,7 +8,6 @@ require 'webrick'
 
 require 'middleman-core/contracts'
 
-# rubocop:disable ModuleLength
 module Middleman
   module Util
     extend Memoist

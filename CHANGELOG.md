@@ -3,6 +3,10 @@
 # 4.4.0
 
 - Support TOML as frontmatter and data.
+- Support Ruby 3.0
+- Require ActiveSupport 6.1+ (required for Ruby 3.0)
+- Drop Ruby 2.5 support (required by activesupport 6.x)
+- Replace URI.escape with WEBrick::HTTPUtils.escape (#2383)
 
 # 4.3.11
 

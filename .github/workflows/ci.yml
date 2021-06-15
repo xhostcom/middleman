@@ -9,7 +9,7 @@ jobs:
     name: ubuntu-ruby-${{ matrix.ruby-version }}
     strategy:
       matrix:
-        ruby-version: [3.0, 2.7, 2.6, 2.5, 2.4]
+        ruby-version: [3.0, 2.7, 2.6, 2.5]
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
@@ -23,8 +23,6 @@ jobs:
         node-version: '12'
     - name: Install dependencies
       run: bundle install
-    - name: Runs linter
-      run: bundle exec rake rubocop
     - name: Runs tests
       run: bundle exec rake test
       env:
