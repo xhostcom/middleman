@@ -43,7 +43,7 @@ Feature: Templates should be chainable
     """
     Then I should see:
     """
-    <h2 id="my-partial">My Partial</h2>
+    <h2>My Partial</h2>
     """
     Then I should see:
     """
@@ -68,11 +68,11 @@ Feature: Templates should be chainable
     When I go to "/my_template.html"
     Then I should see:
     """
-    <h1 id="my-template">My Template</h1>
+    <h1>My Template</h1>
     """
     Then I should see:
     """
-    <h2 id="my-partial">My Partial</h2>
+    <h2>My Partial</h2>
     """
     Then I should see:
     """
@@ -97,7 +97,7 @@ Feature: Templates should be chainable
     When I go to "/my_template.html"
     Then I should see:
     """
-    <h1 id="my-template">My Template</h1>
+    <h1>My Template</h1>
     """
     Then I should see:
     """

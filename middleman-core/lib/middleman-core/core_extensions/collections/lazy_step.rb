@@ -2,7 +2,7 @@ module Middleman
   module CoreExtensions
     module Collections
       class LazyCollectorStep < BasicObject
-        DELEGATE = [:hash, :eql?].freeze
+        DELEGATE = [:hash, :eql?,].freeze
 
         def initialize(name, args, block, parent=nil)
           @name = name
@@ -35,6 +35,11 @@ module Middleman
           end
 
           data.send(@name, *@args.deep_dup, &b)
+        end
+
+        def to_str
+          require "pry"
+          binding.pry
         end
 
         def method_missing(name, *args, &block)
